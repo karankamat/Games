@@ -30,7 +30,6 @@ while not end_of_game:
       #Check if user is wrong.
       if guess not in chosen_word:
           print(f"You guessed a wrong letter {guess}.")
-
           lives -= 1
           if lives == 0:
               end_of_game = True
@@ -43,5 +42,5 @@ while not end_of_game:
     if "_" not in display:
         end_of_game = True
         print("You win.")
-        
+     
     print(ha.stages[lives])
